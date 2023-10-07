@@ -49,6 +49,6 @@ app.use((request: Request, response: Response) => {
 app.use(handleError);
 
 // listen for requests on the specified port
-app.listen(config.PORT, () => {
+app.listen(config.PORT || 3000, () => {
 	console.log(`Server running on port ${config.PORT}...`);
 });
